@@ -6,12 +6,12 @@ Create an app that records employee salaries and adds up teh salaries to report 
 
 ## TODO
 
-- [] create wiring
+- [x] create wiring
 
-  - [] basic HTML
-  - [] basic CSS
-  - [] basic JS
-  - [] basic jQuery
+  - [x] basic HTML
+  - [x] basic CSS
+  - [x] basic JS
+  - [x] basic jQuery
 
 - [] create a form
 
