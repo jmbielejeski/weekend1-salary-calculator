@@ -43,11 +43,11 @@ function onSubmit(event) {
     jobTitle: jobTitle,
     annualSalary: Number(annualSalary),
   };
-  console.log(employee);
+  //console.log(employee);
 
   employeeData.push(employee);
 
-  console.log(employeeData);
+  //console.log(employeeData);
 
   renderEmployeeData(employeeData);
 }
@@ -55,7 +55,7 @@ function onSubmit(event) {
 function renderEmployeeData(data) {
   console.log('rendering employee data');
 
-  $('#employeeDataTabl').empty();
+  $('#employeeDataTable').empty();
   for (let employee of data) {
     $('#employeeDataTable').append(`
         <tr>
