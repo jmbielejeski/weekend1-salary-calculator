@@ -13,19 +13,19 @@ Create an app that records employee salaries and adds up teh salaries to report 
   - [x] basic JS
   - [x] basic jQuery
 
-- [] create a form
+- [x] create a form
 
-  - [] collects the following info
+  - [x] collects the following info
 
-  -[] add these fields
+  -[x] add these fields
 
-  - [] employee first name
-  - [] employee last name
-  - [] ID number
-  - [] Job Title
-  - [] Annual salary
+  - [x] employee first name
+  - [x] employee last name
+  - [x] ID number
+  - [x] Job Title
+  - [x] Annual salary
 
-  - [] Submit button to collect form info
+  - [x] Submit button to collect form info
 
     - [] store the info
     - [] append the info on the DOM
