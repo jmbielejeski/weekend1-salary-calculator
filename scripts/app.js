@@ -44,4 +44,27 @@ function onSubmit(event) {
     annualSalary: Number(annualSalary),
   };
   console.log(employee);
+
+  employeeData.push(employee);
+
+  console.log(employeeData);
+
+  renderEmployeeData(employeeData);
+}
+
+function renderEmployeeData(data) {
+  console.log('rendering employee data');
+
+  $('#employeeDataTabl').empty();
+  for (let employee of data) {
+    $('#employeeDataTable').append(`
+        <tr>
+          <td>${employee.firstName}</td>
+          <td>${employee.lastName}</td>
+          <td>${employee.employeeID}</td>
+          <td>${employee.jobTitle}</td>
+          <td>${employee.annualSalary}</td>
+        </tr>
+      `);
+  }
 }
