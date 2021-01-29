@@ -12,6 +12,9 @@ function onReady() {
   // take date and append to employeeData
   // render to the DOM
   // reset input fields
+
+  //calculate salary total
+  $(document).on('click', '#submitBtn', totalSalary);
 }
 
 // write onSubmit function
@@ -64,9 +67,22 @@ function renderEmployeeData(data) {
           <td>${employee.lastName}</td>
           <td>${employee.employeeID}</td>
           <td>${employee.jobTitle}</td>
-          <td>${employee.annualSalary}</td>
+          <td>$${employee.annualSalary}</td>
         </tr>
       `);
   }
+  //reset input fields on submit
   $('#employeeInputs').trigger('reset');
+}
+
+function totalSalary() {
+  let totalSalary = 0;
+
+  // loop over employee data
+  for (let i = 0; i < employeeData.length; i++) {
+    let currentSalary = employeeData[i].annualSalary;
+    totalSalary = totalSalary + currentSalary;
+    console.log(totalSalary);
+  }
+  $('#salarySum').append(`${totalSalary}`);
 }

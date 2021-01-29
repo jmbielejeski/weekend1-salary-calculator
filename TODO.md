@@ -29,7 +29,7 @@ Create an app that records employee salaries and adds up teh salaries to report 
 
     - [x] store the info
     - [x] append the info on the DOM
-    - [] clear the input fields
+    - [x] clear the input fields
 
   - [] using the stored info
 
