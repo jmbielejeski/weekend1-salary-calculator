@@ -32,4 +32,16 @@ function onSubmit(event) {
 
   let annualSalary = $('#annualSalary').val();
   console.log(annualSalary);
+
+  //append employeeData array with data from variables
+  //create a new item object which stores the data
+
+  let employee = {
+    firstName: firstName,
+    lastName: lastName,
+    employeeID: Number(employeeID),
+    jobTitle: jobTitle,
+    annualSalary: Number(annualSalary),
+  };
+  console.log(employee);
 }
