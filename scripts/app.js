@@ -76,13 +76,14 @@ function renderEmployeeData(data) {
 }
 
 function totalSalary() {
-  let totalSalary = 0;
+  let salary = 0;
 
   // loop over employee data
   for (let i = 0; i < employeeData.length; i++) {
     let currentSalary = employeeData[i].annualSalary;
-    totalSalary = totalSalary + currentSalary;
-    console.log(totalSalary);
+    console.log(currentSalary);
+    salary = parseFloat(salary) + parseFloat(currentSalary);
+    console.log(salary);
   }
-  $('#salarySum').append(`${totalSalary}`);
+  $('#salarySum').append(`${salary}`);
 }
