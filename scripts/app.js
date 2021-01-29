@@ -11,6 +11,7 @@ function onReady() {
   // add submit button functionality
   // take date and append to employeeData
   // render to the DOM
+  // reset input fields
 }
 
 // write onSubmit function
@@ -67,4 +68,5 @@ function renderEmployeeData(data) {
         </tr>
       `);
   }
+  $('#employeeInputs').trigger('reset');
 }

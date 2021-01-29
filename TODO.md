@@ -27,11 +27,11 @@ Create an app that records employee salaries and adds up teh salaries to report 
 
   - [x] Submit button to collect form info
 
-    - [] store the info
-    - [] append the info on the DOM
+    - [x] store the info
+    - [x] append the info on the DOM
     - [] clear the input fields
 
-  - [] using the store info
+  - [] using the stored info
 
     - [] calculate monthly costs
     - [] append costs to DOM
