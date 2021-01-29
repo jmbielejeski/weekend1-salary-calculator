@@ -17,4 +17,19 @@ function onReady() {
 function onSubmit(event) {
   event.preventDefault();
   console.log('in onSubmit');
+
+  let firstName = $('#firstName').val();
+  console.log(firstName);
+
+  let lastName = $('#lastName').val();
+  console.log(lastName);
+
+  let employeeID = $('#employeeID').val();
+  console.log(employeeID);
+
+  let jobTitle = $('#jobTitle').val();
+  console.log(jobTitle);
+
+  let annualSalary = $('#annualSalary').val();
+  console.log(annualSalary);
 }
