@@ -21,6 +21,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 3px solid;
+  margin-bottom: 20px;
 }
 
 label {
@@ -34,10 +35,18 @@ label {
 #submitBtn {
   margin-bottom: 15px;
   border-radius: 20px;
+  width: 175px;
+  height: 35px;
+  font-size: 20px;
 }
 
 #salarySum {
   background-color: #121212;
   width: fit-content;
   float: left;
+}
+
+input {
+  height: 20px;
+  width: 175px;
 }
