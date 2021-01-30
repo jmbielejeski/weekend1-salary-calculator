@@ -67,7 +67,7 @@ function renderEmployeeData(data) {
           <td>${employee.lastName}</td>
           <td>${employee.employeeID}</td>
           <td>${employee.jobTitle}</td>
-          <td>$${employee.annualSalary}</td>
+          <td class ="amount">$${employee.annualSalary}</td>
         </tr>
       `);
   }
@@ -80,10 +80,10 @@ function totalSalary() {
 
   // loop over employee data
   for (let i = 0; i < employeeData.length; i++) {
-    let currentSalary = employeeData[i].annualSalary;
-    console.log(currentSalary);
-    salary = parseFloat(salary) + parseFloat(currentSalary);
-    console.log(salary);
+    salary = employeeData[i].annualSalary / 12;
+    console.log('salary is ', salary);
+    let currentSalary = employeeData[i].annualSalary.val();
+    salary += currentSalary;
+    $('#salarySum').append(`${salary}`);
   }
-  $('#salarySum').append(`${salary}`);
 }

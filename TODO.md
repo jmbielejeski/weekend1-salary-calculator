@@ -38,7 +38,7 @@ Create an app that records employee salaries and adds up teh salaries to report 
     - [] if total monthly costs exceed $20k add a red background color
 
   - [] create a delete employee button
-    - [] removes an employee form the DOM
+    - [] removes an employee from the DOM
 
 ## STRETCH GOALS
 
