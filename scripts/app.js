@@ -95,6 +95,9 @@ function totalSalary() {
   monthlySalary += salary;
   console.log('monthly salary is', monthlySalary);
 
+  monthlySalary = monthlySalary.toFixed(2);
+  monthlySalary = Number(monthlySalary);
+
   $('#salarySum').empty();
   $('#salarySum').append(`$${monthlySalary}`);
 
@@ -107,6 +110,8 @@ function totalSalary() {
 function deleteMe() {
   $(this).parent().parent().remove();
 
-  //console.log('delete me!', $('.harmonica-item'));
-  //$('.harmonica-item').remove()
+  // fix monthly calculations to take into account deleted employees
+  // use . data to grab the annual salary amount. store in a variable.
+
+  // use that variable to subtract from monthly amount
 }
