@@ -33,4 +33,11 @@ label {
 
 #submitBtn {
   margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+#salarySum {
+  background-color: #121212;
+  width: fit-content;
+  float: left;
 }

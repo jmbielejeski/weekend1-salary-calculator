@@ -99,7 +99,8 @@ function totalSalary() {
   $('#salarySum').append(`$${monthlySalary}`);
 
   if (monthlySalary > 20000) {
-    document.getElementById('salarySum').style.backgroundColor = 'red';
+    document.getElementById('salarySum').style.backgroundColor =
+      'rgba(255, 0, 0, .33';
   }
 }
 
