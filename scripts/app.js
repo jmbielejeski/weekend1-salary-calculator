@@ -89,6 +89,9 @@ function totalSalary() {
   console.log('monthly salary is', monthlySalary);
 
   $('#salarySum').empty();
-  $('#salarySum').append(`
-  Total Monthly: $${monthlySalary}`);
+  $('#salarySum').append(`$${monthlySalary}`);
+
+  if (monthlySalary > 20000) {
+    document.getElementById('salarySum').style.backgroundColor = 'red';
+  }
 }

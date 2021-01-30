@@ -31,11 +31,11 @@ Create an app that records employee salaries and adds up teh salaries to report 
     - [x] append the info on the DOM
     - [x] clear the input fields
 
-  - [] using the stored info
+  - [x] using the stored info
 
-    - [] calculate monthly costs
-    - [] append costs to DOM
-    - [] if total monthly costs exceed $20k add a red background color
+    - [x] calculate monthly costs
+    - [x] append costs to DOM
+    - [x] if total monthly costs exceed $20k add a red background color
 
   - [] create a delete employee button
     - [] removes an employee from the DOM
@@ -46,3 +46,4 @@ Create an app that records employee salaries and adds up teh salaries to report 
 - [] additional functionality
   - [] search by title and return that salary cost per month
 - [] once employee is deleted recalculate total monthly salaries
+  -[] change to 2 decimal places. -[x] show values as $
