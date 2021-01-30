@@ -17,10 +17,20 @@ td {
 }
 
 table {
-  border-spacing: 0;
+  table-layout: fixed;
   width: 100%;
-  margin: 0 0 1rem;
-  border: 1px solid #bebebe;
-  border-radius: 8px;
-  overflow: hidden;
+  border-collapse: collapse;
+  border: 3px solid;
+}
+
+label {
+  text-align: right;
+  clear: both;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+#submitBtn {
+  margin-bottom: 15px;
 }
