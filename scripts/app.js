@@ -75,15 +75,20 @@ function renderEmployeeData(data) {
   $('#employeeInputs').trigger('reset');
 }
 
-function totalSalary() {
-  let salary = 0;
+let salary = 0;
+let monthlySalary = 0;
 
+function totalSalary() {
   // loop over employee data
   for (let i = 0; i < employeeData.length; i++) {
     salary = employeeData[i].annualSalary / 12;
     console.log('salary is ', salary);
-    let currentSalary = employeeData[i].annualSalary.val();
-    salary += currentSalary;
-    $('#salarySum').append(`${salary}`);
   }
+
+  monthlySalary += salary;
+  console.log('monthly salary is', monthlySalary);
+
+  $('#salarySum').empty();
+  $('#salarySum').append(`
+  Total Monthly: $${monthlySalary}`);
 }
