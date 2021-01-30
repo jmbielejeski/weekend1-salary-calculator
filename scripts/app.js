@@ -15,6 +15,9 @@ function onReady() {
 
   //calculate salary total
   $(document).on('click', '#submitBtn', totalSalary);
+
+  // add delete me functionality
+  $(document).on('click', '.deleteBtn', deleteMe);
 }
 
 // write onSubmit function
@@ -68,6 +71,10 @@ function renderEmployeeData(data) {
           <td>${employee.employeeID}</td>
           <td>${employee.jobTitle}</td>
           <td class ="amount">$${employee.annualSalary}</td>
+          <th>          
+            <button class="deleteBtn">Delete employee</button>
+          </th>
+
         </tr>
       `);
   }
@@ -94,4 +101,11 @@ function totalSalary() {
   if (monthlySalary > 20000) {
     document.getElementById('salarySum').style.backgroundColor = 'red';
   }
+}
+
+function deleteMe() {
+  $(this).parent().parent().remove();
+
+  //console.log('delete me!', $('.harmonica-item'));
+  //$('.harmonica-item').remove()
 }
