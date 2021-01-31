@@ -45,5 +45,4 @@ Create an app that records employee salaries and adds up teh salaries to report 
 - [x] Add styling
 - [] additional functionality
   - [] search by title and return that salary cost per month
-- [] once employee is deleted recalculate total monthly salaries
-  -[] change to 2 decimal places. -[x] show values as $
+- [] once employee is deleted recalculate total monthly salaries -[x] change to 2 decimal places. -[x] show values as $
