@@ -1,9 +1,38 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eeee;
+    background: #121212;
+  }
+
+  ::placeholder {
+    color: #eeee;
+    opacity: 0.8;
+  }
+
+  input {
+    background-color: rgb(34, 33, 33);
+    color: #eeee;
+  }
+
+  #submitBtn {
+    color: #eeee;
+  }
+
+  tbody tr:nth-of-type(even) {
+    background-color: rgb(34, 33, 33);
+  }
+}
+@media (prefers-color-scheme: light) {
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+}
+
 body {
   font-family: sans-serif;
 }
 
 h1 {
-  flex: auto;
   text-align: center;
 }
 
@@ -20,21 +49,6 @@ table {
   border-collapse: collapse;
   border: 3px solid;
   margin-bottom: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-thead {
-  background-color: #009879;
-  color: #ffffff;
-  text-align: left;
-}
-
-tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
 }
 
 label {
@@ -61,4 +75,5 @@ label {
 input {
   height: 20px;
   width: 175px;
+  font-size: 16px;
 }
