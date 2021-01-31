@@ -70,7 +70,7 @@ function renderEmployeeData(data) {
           <td>${employee.lastName}</td>
           <td>${employee.employeeID}</td>
           <td>${employee.jobTitle}</td>
-          <td class ="amount">$${employee.annualSalary}</td>
+          <td class ="amount">${employee.annualSalary}</td>
           <td>          
             <button class="deleteBtn">Delete employee</button>
           </td>
@@ -108,9 +108,32 @@ function totalSalary() {
 }
 
 function deleteMe() {
-  let deletedEmployee = $(this).parent().siblings();
+  let deletedEmployee = $(this).parent().parent().children();
 
-  console.log(deletedEmployee[4]);
+  deletedEmployee = deletedEmployee.eq(4).text();
+
+  deletedEmployee = Number(deletedEmployee) / 12;
+
+  console.log(deletedEmployee);
+
+  monthlySalary = Number(monthlySalary);
+
+  console.log(monthlySalary);
+
+  monthlySalary -= deletedEmployee;
+
+  console.log(monthlySalary);
+
+  $('#salarySum').empty();
+  $('#salarySum').append(`$${monthlySalary}`);
+
+  if (monthlySalary <= 20000) {
+    document.getElementById('salarySum').style.backgroundColor = '';
+  }
+
+  // let deletedEmployee = $(this).parent().siblings();
+
+  // console.log(deletedEmployee[4]);
 
   $(this).parent().parent().remove();
 
