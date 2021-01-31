@@ -43,14 +43,6 @@ td {
   padding: 0.5rem;
 }
 
-table {
-  table-layout: fixed;
-  width: auto;
-  border-collapse: collapse;
-  border: 3px solid;
-  margin-bottom: 20px;
-}
-
 label {
   text-align: right;
   clear: both;
@@ -60,6 +52,7 @@ label {
 }
 
 #submitBtn {
+  margin-top: 20px;
   margin-bottom: 15px;
   border-radius: 20px;
   width: 175px;
@@ -67,13 +60,21 @@ label {
   font-size: 20px;
 }
 
-#salarySum {
-  width: fit-content;
-  float: left;
-}
-
 input {
   height: 20px;
   width: 175px;
   font-size: 16px;
+}
+
+table {
+  width: auto;
+  border-collapse: collapse;
+  border: 3px solid;
+  margin-bottom: 20px;
+}
+
+#salarySum {
+  margin-bottom: 25px;
+  overflow-y: hidden;
+  float: left;
 }
