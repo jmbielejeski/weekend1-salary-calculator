@@ -48,7 +48,7 @@ function onSubmit(event) {
     lastName: lastName,
     employeeID: Number(employeeID),
     jobTitle: jobTitle,
-    annualSalary: Number(annualSalary),
+    annualSalary: Number(annualSalary).toFixed(2),
   };
   //console.log(employee);
 
@@ -108,19 +108,25 @@ function totalSalary() {
 }
 
 function deleteMe() {
+  // fix monthly calculations to take into account deleted employees
+
   let deletedEmployee = $(this).parent().parent().children();
 
   deletedEmployee = deletedEmployee.eq(4).text();
 
   deletedEmployee = Number(deletedEmployee) / 12;
 
+  deletedEmployee = deletedEmployee.toFixed(2);
+
   console.log(deletedEmployee);
 
   monthlySalary = Number(monthlySalary);
 
-  console.log(monthlySalary);
+  // use that variable to subtract from monthly amount
 
   monthlySalary -= deletedEmployee;
+
+  monthlySalary = monthlySalary.toFixed(2);
 
   console.log(monthlySalary);
 
@@ -131,14 +137,7 @@ function deleteMe() {
     document.getElementById('salarySum').style.backgroundColor = '';
   }
 
-  // let deletedEmployee = $(this).parent().siblings();
-
-  // console.log(deletedEmployee[4]);
-
   $(this).parent().parent().remove();
 
-  // fix monthly calculations to take into account deleted employees
   // use . data to grab the annual salary amount. store in a variable.
-
-  // use that variable to subtract from monthly amount
 }
