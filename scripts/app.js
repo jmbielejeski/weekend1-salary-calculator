@@ -71,9 +71,9 @@ function renderEmployeeData(data) {
           <td>${employee.employeeID}</td>
           <td>${employee.jobTitle}</td>
           <td class ="amount">$${employee.annualSalary}</td>
-          <th>          
+          <td>          
             <button class="deleteBtn">Delete employee</button>
-          </th>
+          </td>
 
         </tr>
       `);
@@ -108,6 +108,10 @@ function totalSalary() {
 }
 
 function deleteMe() {
+  let deletedEmployee = $(this).parent().siblings();
+
+  console.log(deletedEmployee[4]);
+
   $(this).parent().parent().remove();
 
   // fix monthly calculations to take into account deleted employees
